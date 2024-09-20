@@ -8,5 +8,8 @@ Features
     Simple and clean UI.
     Download the QR code as an image.
 
+## Screenshot
+![QR Generator - Main View](./Images/QR-generator.png)
+![QR Generator - After Generating QR](./Images/QR-generator-output.png)
 
-    
+
