@@ -17,6 +17,17 @@ sizes.addEventListener('change',(e)=>{
     isEmptyInput()
 });
 
+downloadBtn.addEventListener("click",()=>{
+    let img = document.querySelector('.qr-body img')
+    if (img !== null) {
+        let imgAtrr = img.getAttribute("src");
+        downloadBtn.setAttribute("href",imgAtrr);
+    }
+    else{
+        downloadBtn.setAttribute("href",`${document.querySelector('canvas').toDataURL()}`);
+    }
+});
+
 function isEmptyInput(){
     qrText.value.length > 0 ? generateQRCode() :  alert("Enter the text or URL to generate the QR-Code");
 }
